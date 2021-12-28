@@ -81,14 +81,14 @@ body {
 .cont-m-menu .btn-mode {
   margin: 8px auto 0;
   border: 2px solid transparent;
-  background: url("../images/icons/sunglasses.svg") no-repeat #182848;
+  background: url("../imgs/icons/sunglasses.svg") no-repeat #182848;
   background-size: 60%;
   background-position: 50% 50%;
   transition: background-image 0.3s, border-color 0.3s;
 }
 .cont-m-menu .btn-mode:hover {
   border-color: #fff;
-  background-image: url("../images/icons/sun.svg");
+  background-image: url("../imgs/icons/sun.svg");
 }
 .btn-m-menu:hover + .cont-m-menu,
 .btn-m-menu:focus + .cont-m-menu {
