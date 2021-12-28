@@ -99,3 +99,11 @@ body {
   bottom: 103px;
   opacity: 1;
 }
+
+@media screen and (min-width: 641px) {
+  /* mobile menu */
+  .btn-m-menu,
+  .cont-m-menu {
+    opacity: 0;
+  }
+}
