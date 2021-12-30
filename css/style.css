@@ -7,9 +7,35 @@
 @import "components/mobile-menu-btn.css";
 @import "./components/header.css";
 @import "./components/intro.css";
+@import "./components/about-me.css";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: var(--main-font);
   background-color: rgba(0, 0, 0, 0.5);
   color: #333;
+  height: 1000px;
+}
+
+main {
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+.wrap-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 50px 0;
+}
+.title-section {
+  color: var(--primary-color);
+  font-size: 30px;
+  font-weight: bold;
 }

@@ -4,4 +4,7 @@
   --point-font: "Montserrat Subrayada", sans-serif;
   --main-font: "Montserrat Alternates", sans-serif;
   --kr-font: "Noto Sans KR", sans-serif;
+  --mobile: 425px;
+  --tablet: 768px;
+  --laptot: 1024px;
 }

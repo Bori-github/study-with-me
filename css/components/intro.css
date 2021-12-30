@@ -1,11 +1,4 @@
-main .intro {
-  background-color: #fff;
-}
-.intro .section-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.intro .wrap-section {
   height: 100vh;
 }
 .intro .cont-intro {
@@ -32,6 +25,7 @@ main .intro {
     var(--primary-color) 100%
   );
   color: #fff;
+  text-align: center;
 }
 .intro .list-sns {
   display: flex;
@@ -51,7 +45,7 @@ main .intro {
 .list-sns .sns-instagram {
   background-image: url("../../imgs/sns/instagram.svg");
 }
-.list-sns .sns-vlog {
+.list-sns .sns-velog {
   background-image: url("../../imgs/sns/velog.png");
 }
 .list-sns .sns-github:hover {
@@ -60,12 +54,12 @@ main .intro {
 .list-sns .sns-instagram:hover {
   background-image: url("../../imgs/sns/instagram-hover.svg");
 }
-.list-sns .sns-vlog:hover {
+.list-sns .sns-velog:hover {
   background-image: url("../../imgs/sns/velog-hover.png");
 }
 .intro .cont-intro-code {
   position: relative;
-  margin: 20px;
+  margin-top: 20px;
   padding: 25px 25px 45px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: var(--primary-color);
@@ -109,12 +103,11 @@ main .intro {
   background-color: #333;
 }
 
-@media screen and (min-width: 641px) {
-  .intro .section-wrap {
+/* tablet */
+@media screen and (min-width: 768px) {
+  .intro .wrap-section {
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1000px;
-    padding: 0 60px;
     margin: 0 auto;
   }
   .intro .cont-intro {
@@ -130,6 +123,7 @@ main .intro {
     margin: 0 30px 0 0;
   }
   .intro .cont-intro-code {
+    margin: 0;
     padding: 30px 30px 45px;
     font-size: 16px;
   }

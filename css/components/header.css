@@ -2,7 +2,8 @@
   display: none;
 }
 
-@media screen and (min-width: 641px) {
+/* tablet */
+@media screen and (min-width: 768px) {
   .header {
     display: flex;
     flex-wrap: wrap;
