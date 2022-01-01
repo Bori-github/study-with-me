@@ -85,7 +85,7 @@
   opacity: 1;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 768px) {
   .btn-m-menu,
   .cont-m-menu {
     display: none;

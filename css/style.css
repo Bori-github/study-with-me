@@ -8,6 +8,7 @@
 @import "./components/header.css";
 @import "./components/intro.css";
 @import "./components/about-me.css";
+@import "./components/skills.css";
 
 * {
   box-sizing: border-box;

@@ -1,0 +1,52 @@
+.skills .list-skills {
+  display: flex;
+}
+.list-skills .item-skill {
+  width: 50px;
+  height: 50px;
+  margin: 40px 10px 0;
+  background: url("../../imgs/sprites_skills.png") no-repeat;
+  background-size: 360px;
+  background-position: -5px;
+}
+.list-skills .item-skill.skill-css {
+  background-position: -65px;
+}
+.list-skills .item-skill.skill-js {
+  background-position: -125px;
+}
+.list-skills .item-skill.skill-node {
+  background-position: -185px;
+}
+.list-skills .item-skill.skill-react {
+  background-position: -245px;
+}
+.list-skills .item-skill.skill-ts {
+  background-position: -305px;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .list-skills .item-skill {
+    width: 100px;
+    height: 100px;
+    margin: 60px 20px 0;
+    background-size: 720px;
+    background-position: -10px;
+  }
+  .list-skills .item-skill.skill-css {
+    background-position: -130px;
+  }
+  .list-skills .item-skill.skill-js {
+    background-position: -250px;
+  }
+  .list-skills .item-skill.skill-node {
+    background-position: -370px;
+  }
+  .list-skills .item-skill.skill-react {
+    background-position: -490px;
+  }
+  .list-skills .item-skill.skill-ts {
+    background-position: -610px;
+  }
+}
