@@ -9,6 +9,7 @@
 @import "./components/intro.css";
 @import "./components/about-me.css";
 @import "./components/skills.css";
+@import "./components/just-for-fun.css";
 
 * {
   box-sizing: border-box;
@@ -33,10 +34,12 @@ main {
   justify-content: center;
   margin: 0 auto;
   max-width: 1000px;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 .title-section {
+  margin-top: 50px;
   color: var(--primary-color);
   font-size: 30px;
   font-weight: bold;
+  text-align: center;
 }

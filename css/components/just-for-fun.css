@@ -1,0 +1,54 @@
+.for-fun .fun-card {
+  margin: 15px 0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  background-color: #fff;
+}
+.fun-card .title-card {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.fun-card .title-card .btn-github {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  background: url("../../imgs/sns/github.svg") no-repeat 50% 50%;
+  background-size: 70%;
+}
+.fun-card .desc-card {
+  line-height: 1.4;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .for-fun .wrap-section {
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 30px 0;
+  }
+  .fun-card {
+    position: relative;
+    width: 60%;
+    min-height: 410px;
+  }
+  .fun-card .cont-codepen {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    bottom: 30px;
+    width: 600px;
+    transform: translateX(100%);
+  }
+  .fun-card .title-card {
+    margin: 0 0 15px;
+    font-size: 23px;
+  }
+}
