@@ -1,4 +1,6 @@
 .for-fun .fun-card {
+  /* 너비 100%가 없으면 컨텐츠 사이즈에 따라 너비값이 달라짐 */
+  width: 100%;
   margin: 15px 0;
   padding: 30px;
   border-radius: 10px;
@@ -7,6 +9,7 @@
 }
 .fun-card .title-card {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 20px 0 15px;
   font-size: 18px;
@@ -34,18 +37,26 @@
     max-width: 1000px;
     padding: 30px 0;
   }
-  .fun-card {
+  .for-fun .fun-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     position: relative;
     width: 60%;
     min-height: 410px;
   }
   .fun-card .cont-codepen {
     position: absolute;
+    right: calc(-90% + 150px);
+    width: 90%;
+  }
+  .fun-card .cont-text {
+    position: absolute;
     top: 30px;
-    right: 0;
+    right: 180px;
     bottom: 30px;
-    width: 600px;
-    transform: translateX(100%);
+    left: 30px;
+    /* width: 50%; */
   }
   .fun-card .title-card {
     margin: 0 0 15px;
