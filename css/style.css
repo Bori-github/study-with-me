@@ -10,6 +10,7 @@
 @import "./components/about-me.css";
 @import "./components/skills.css";
 @import "./components/just-for-fun.css";
+@import "./components/projects.css";
 
 * {
   box-sizing: border-box;
