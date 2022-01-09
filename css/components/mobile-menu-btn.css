@@ -31,6 +31,7 @@
 .cont-m-menu {
   position: fixed;
   right: 18px;
+  z-index: 10;
   bottom: 153px;
   opacity: 0;
   transition: all 0.3s;
@@ -46,7 +47,11 @@
   box-sizing: content-box;
   border: 0;
   border-radius: 100%;
-  background-color: var(--primary-color);
+  background: linear-gradient(
+    90deg,
+    var(--secondaty-color) 0%,
+    var(--primary-color) 100%
+  );
   cursor: pointer;
 }
 .cont-m-menu .list-menu li {
@@ -79,8 +84,7 @@
   border-color: #fff;
   background-image: url("../../imgs/icons/sun.svg");
 }
-.btn-m-menu:hover + .cont-m-menu,
-.btn-m-menu:focus + .cont-m-menu {
+.cont-m-menu.active {
   bottom: 103px;
   opacity: 1;
 }

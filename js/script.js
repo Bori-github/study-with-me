@@ -1,3 +1,6 @@
+const mobileToggleBtn = document.querySelector(".btn-m-menu");
+const mobileMenu = document.querySelector(".cont-m-menu");
+
 const slider = document.querySelector(".list-projects");
 
 let isDown = false;
@@ -25,6 +28,7 @@ const move = (e) => {
   slider.scrollLeft = scrollLeft - dist;
 };
 
+// Event listeners
 slider.addEventListener("mousedown", start);
 slider.addEventListener("touchstart", start);
 
@@ -34,3 +38,7 @@ slider.addEventListener("touchmove", move);
 slider.addEventListener("mouseleave", end);
 slider.addEventListener("mouseup", end);
 slider.addEventListener("touchend", end);
+
+mobileToggleBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+});
