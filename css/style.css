@@ -11,6 +11,7 @@
 @import "./components/skills.css";
 @import "./components/just-for-fun.css";
 @import "./components/projects.css";
+@import "./components/email-me.css";
 
 * {
   box-sizing: border-box;
@@ -43,4 +44,17 @@ main {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 14px;
+}
+.footer .logo {
+  width: 20px;
 }

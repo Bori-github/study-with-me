@@ -1,0 +1,54 @@
+.email-me .gform {
+  width: 100%;
+  padding: 10px 30px 0;
+  border: 10px solid var(--primary-color);
+  border-radius: 20px;
+}
+.email-me .box-input {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.email-me .box-input label {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.email-me .box-input input,
+.email-me .box-input textarea {
+  border: 0;
+  border-bottom: 1px solid var(--primary-color);
+  font-size: 16px;
+  font-family: inherit;
+}
+.email-me .box-input textarea {
+  border: 1px solid var(--primary-color);
+  height: 150px;
+  resize: none;
+}
+.email-me .btn-send {
+  padding: 15px 0;
+  border: 0;
+  border-radius: 30px;
+  background: linear-gradient(
+    90deg,
+    var(--secondaty-color) 0%,
+    var(--primary-color) 100%
+  );
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.email-me .thankyou_message {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* pc */
+@media screen and (min-width: 1024px) {
+  .email-me {
+    margin-top: 380px;
+  }
+}
