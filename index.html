@@ -19,11 +19,11 @@
     <div class="cont-m-menu">
       <nav>
         <ul class="list-menu">
-          <li><a href="#intro">home</a></li>
-          <li><a href="#aboutMe">about me</a></li>
-          <li><a href="#">projects</a></li>
-          <li><a href="#">contact</a></li>
-          <li><a href="#">blog</a></li>
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#aboutMe">About me</a></li>
+          <li><a href="#forFun">Just for Fun</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <button class="btn-mode"></button>
@@ -40,11 +40,11 @@
       </h1>
       <nav>
         <ul class="list-menu">
-          <li><a href="#intro">home</a></li>
-          <li><a href="#aboutMe">about me</a></li>
-          <li><a href="#">projects</a></li>
-          <li><a href="#">contact</a></li>
-          <li><a href="#">blog</a></li>
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#aboutMe">About me</a></li>
+          <li><a href="#forFun">Just for Fun</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="cont-mode dark">
@@ -129,7 +129,7 @@
           </ul>
         </div>
       </section>
-      <section class="skills">
+      <section id="skills" class="skills">
         <h2 class="title-section">Skills</h2>
         <div class="wrap-section">
           <ul class="list-skills">
@@ -142,7 +142,8 @@
           </ul>
         </div>
       </section>
-      <section class="for-fun">
+
+      <section id="forFun" class="for-fun">
         <h2 class="title-section">Just for Fun</h2>
         <div class="wrap-section">
           <article class="fun-card">
@@ -179,13 +180,14 @@
           </article>
         </div>
       </section>
-      <section class="projects">
+      
+      <section id="projects" class="projects">
         <h2 class="title-section">Projects</h2>
         <div class="wrap-section">
           <div class="cont-slider">
             <ul class="list-projects">
               <li class="item-project">
-                <strong class="title-project">Spedd Code Fighter</strong>
+                <strong class="title-project">Speed Code Fighter</strong>
                 <p>Project desc Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, dignissimos!</p>
                 <ul class="list-btn">
                   <li><a href="#" class="btn-live">Live Demo</a></li>
@@ -236,8 +238,47 @@
           </div>
         </div>
       </section>
+
+      <section class="email-me">
+        <h2 class="title-section">Email Me!</h2>
+        <div class="wrap-section">
+          <form class="gform" action="https://script.google.com/macros/s/AKfycbzBT3MM8mpiWutlwJX4p4PyhJI0zPihVy7IXkMYq3o5OMu5AOXQ/exec" method="POST" data-email="qhflrnfl4324@gmail.com">
+            <fieldset>
+              <div class="box-input">
+                <label for="userName">Name plz:)</label>
+                <input type="text" id="userName" name="name" placeholder="이!름!" required>
+              </div>
+              <div class="box-input">
+                <label for="userEmail">Email Address</label>
+                <input type="email" id="userEmail" name="email" placeholder="이!메!일!" required>
+              </div>
+              <div class="box-input">
+                <label for="userMessage">Message</label>
+                <textarea name="message" id="userMessage" required></textarea>
+              </div>
+              <div class="box-input">
+                <button type="submit" class="btn-send">Send Message</button>
+              </div>
+              
+              <div style="display:none" class="thankyou_message">
+                <p>연락주셔서 감사합니다. 빠른 시일 내에 답변 드리겠습니다🚀</p>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
     </main>
 
+    <footer class="footer">
+      <figure class="logo">
+          <img
+            src="imgs/icons/moon-stars-fill-w.svg"
+            alt="이보리의 포트폴리오 사이트 로고"
+          />
+      </figure>
+      <small>© BORIGURI CORP.</small>
+    </footer>
+    <script data-cfasync="false" type="text/javascript" src="js/email.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
