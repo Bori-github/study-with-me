@@ -41,14 +41,19 @@
   .header .cont-mode.dark {
     justify-content: flex-end;
   }
-  .header .btn-mode {
-    padding: 5px 10px;
+  .header .cont-mode .btn-mode {
+    width: 35px;
+    height: 35px;
     border: 0;
-    border-radius: 30px;
-    background-color: #182848;
+    border-radius: 50%;
+    background: url("../../imgs/icons/sunglasses.svg") no-repeat
+      var(--primary-color);
+    background-size: 70%;
+    background-position: 50% 50%;
     color: #fff;
-    font-family: "DM Sans", sans-serif;
-    font-size: 14px;
     cursor: pointer;
+  }
+  .header .cont-mode.dark .btn-mode {
+    background-image: url("../../imgs/icons/sun.svg");
   }
 }
