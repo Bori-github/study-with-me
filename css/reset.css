@@ -113,16 +113,8 @@ ul,
 li {
   list-style: none;
 }
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
+* {
+  box-sizing: border-box;
 }
 table {
   border-collapse: collapse;
@@ -135,6 +127,10 @@ a {
 img {
   width: 100%;
   display: block;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
 }
 .sr-only {
   position: absolute;

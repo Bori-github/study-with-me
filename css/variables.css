@@ -1,10 +1,12 @@
 :root {
   --primary-color: #182848;
   --secondaty-color: #4f5873;
+  --white-30: rgba(255, 255, 255, 0.3);
   --point-font: "Montserrat Subrayada", sans-serif;
   --main-font: "Montserrat Alternates", sans-serif;
   --kr-font: "Noto Sans KR", sans-serif;
   --shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --code-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   --mobile: 425px;
   --tablet: 768px;
   --laptot: 1024px;
