@@ -30,14 +30,8 @@
     </div>
 
     <header class="header">
-      <h1 class="logo">
-        <a href="#">
-          <img
-            src="imgs/icons/moon-stars-fill.svg"
-            alt="이보리의 포트폴리오 사이트 로고"
-          />
-        </a>
-      </h1>
+      <h1 class="sr-only">이보리의 포트폴리오</h1>
+      <a href="index.html" class="link-logo"></a>
       <nav>
         <ul class="list-menu">
           <li><a href="#intro">Home</a></li>
@@ -47,7 +41,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="cont-mode dark">
+      <div class="cont-mode">
         <button class="btn-mode"></button>
       </div>
     </header>
@@ -136,7 +130,6 @@
             <li class="item-skill skill-html"></li>
             <li class="item-skill skill-css"></li>
             <li class="item-skill skill-js"></li>
-            <li class="item-skill skill-node"></li>
             <li class="item-skill skill-react"></li>
             <li class="item-skill skill-ts"></li>
           </ul>
@@ -155,11 +148,11 @@
             <div class="cont-text">
               <h3 class="title-card">
                 CSS로 캐릭터 그리기
-                <a href="#" class="btn-github"></a>
               </h3>
               <p class="desc-card">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui mollitia quas similique facere ipsam at, quis nam soluta deleniti nobis?
               </p>
+              <a href="#" class="btn-github"></a>
             </div>
           </article>
           <article class="fun-card">
@@ -171,11 +164,11 @@
             <div class="cont-text">
               <h3 class="title-card">
                 Tailwind를 이용한 이력서 양식
-                <a href="#" class="btn-github"></a>
               </h3>
               <p class="desc-card">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui mollitia quas similique facere ipsam at, quis nam soluta deleniti nobis?
               </p>
+              <a href="#" class="btn-github"></a>
             </div>
           </article>
         </div>
@@ -254,7 +247,7 @@
               </div>
               <div class="box-input">
                 <label for="userMessage">Message</label>
-                <textarea name="message" id="userMessage" required></textarea>
+                <textarea name="message" id="userMessage"  placeholder="메!시!지!" required></textarea>
               </div>
               <div class="box-input">
                 <button type="submit" class="btn-send">Send Message</button>
