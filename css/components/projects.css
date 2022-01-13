@@ -4,7 +4,7 @@
 .projects .cont-slider {
   width: 100%;
   padding: 20px 0;
-  background-color: var(--primary-color);
+  background-color: var(--accent-color-1);
 }
 .cont-slider .list-projects {
   overflow-x: hidden;
@@ -23,12 +23,13 @@
   padding: 30px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.8);
+  color: var(--accent-color-1);
   line-height: 1.3;
   transition: all 0.3s;
 }
 .list-projects .item-project:hover {
-  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
-  transform: translate(-5px, -5px);
+  box-shadow: var(--hover-shadow);
+  transform: translate(-3px, -3px);
 }
 .item-project .title-project {
   font-size: 22px;
@@ -46,14 +47,14 @@
   margin-right: 10px;
   padding: 10px;
   border-radius: 5px;
-  background-color: var(--primary-color);
+  background-color: var(--accent-color-1);
   color: #fff;
 }
 .list-btn .btn-github {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: url("../../imgs/sns/github-hover.svg") no-repeat;
+  background: url("../../imgs/sns/github-hover.svg") no-repeat 50% 50%;
   background-size: 100%;
 }
 
@@ -76,5 +77,11 @@
   }
   .list-projects .item-project {
     min-width: 400px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .list-btn .btn-github {
+    background-image: url("../../imgs/sns/github-b.svg");
   }
 }

@@ -4,7 +4,8 @@
 
 @import "reset.css";
 @import "variables.css";
-@import "components/mobile-menu-btn.css";
+
+@import "./components/mobile-menu-btn.css";
 @import "./components/header.css";
 @import "./components/intro.css";
 @import "./components/about-me.css";
@@ -18,14 +19,16 @@
 }
 
 body {
+  --duration: 0.5s;
+  --timing: ease;
   font-family: var(--main-font);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #333;
-  height: 1000px;
+  background-color: var(--bg-color);
+  color: var(--change-color);
+  transition: all var(--duration) var(--timing);
 }
 
 main {
-  background-color: #fff;
+  background-color: var(--bg-color);
   padding: 0 20px;
 }
 
@@ -51,10 +54,16 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 25px;
-  background-color: var(--primary-color);
+  background-color: var(--accent-color-1);
   color: #fff;
   font-size: 14px;
 }
 .footer .logo {
   width: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fff;
+  }
 }

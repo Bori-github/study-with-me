@@ -5,8 +5,8 @@
   width: 50px;
   height: 50px;
   margin: 40px 10px 0;
-  background: url("../../imgs/sprites_skills.png") no-repeat;
-  background-size: 360px;
+  background: url("../../imgs/sprites_skils.png") no-repeat;
+  background-size: 300px;
   background-position: -5px;
 }
 .list-skills .item-skill.skill-css {
@@ -15,23 +15,19 @@
 .list-skills .item-skill.skill-js {
   background-position: -125px;
 }
-.list-skills .item-skill.skill-node {
+.list-skills .item-skill.skill-react {
   background-position: -185px;
 }
-.list-skills .item-skill.skill-react {
+.list-skills .item-skill.skill-ts {
   background-position: -245px;
 }
-.list-skills .item-skill.skill-ts {
-  background-position: -305px;
-}
-
 /* tablet */
 @media screen and (min-width: 768px) {
   .list-skills .item-skill {
     width: 100px;
     height: 100px;
     margin: 60px 20px 0;
-    background-size: 720px;
+    background-size: 600px;
     background-position: -10px;
   }
   .list-skills .item-skill.skill-css {
@@ -40,13 +36,16 @@
   .list-skills .item-skill.skill-js {
     background-position: -250px;
   }
-  .list-skills .item-skill.skill-node {
+  .list-skills .item-skill.skill-react {
     background-position: -370px;
   }
-  .list-skills .item-skill.skill-react {
+  .list-skills .item-skill.skill-ts {
     background-position: -490px;
   }
-  .list-skills .item-skill.skill-ts {
-    background-position: -610px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .list-skills .item-skill {
+    background-image: url("../../imgs/sprites_skills-w.png");
   }
 }
